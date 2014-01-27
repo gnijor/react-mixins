@@ -7,7 +7,7 @@ Sample:
   
     React.createClass({
       mixin: [Router],
-      componendDidMount: function() {
+      componentDidMount: function() {
         this.respondTo({
           '': this.fetchData,
           'features/:id': this.fetchFeature
@@ -16,7 +16,7 @@ Sample:
       fetchData: function() {
         ...
       },
-      fetchFeatures: function(id) {
+      fetchFeature: function(id) {
         ...
       }
     });
