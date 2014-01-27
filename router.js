@@ -27,7 +27,7 @@ define( function( require ) {
 
       if (!started) {
         pushState = !!pushState;
-        Backbone.history.start({ root: root, pushState: pushState });
+        Backbone.history.start({ root: root || '/', pushState: pushState });
         started = true;
       }
     }
